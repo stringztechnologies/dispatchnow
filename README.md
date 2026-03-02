@@ -1,17 +1,9 @@
 # DispatchNow
 
-Sub-agent orchestration framework for OpenClaw and multi-agent systems.
+AI agent orchestration + operational delegation in one skill.
 
-**Plan → Prompt → Dispatch → Recover → Evaluate**
-
-## What It Does
-
-DispatchNow turns chaotic multi-agent work into structured, efficient pipelines:
-
-- 📋 **Structured planning** before any delegation
-- 🎯 **Minimal-context prompting** — each agent gets only what it needs
-- 🔄 **Error recovery** — diagnose, reframe, retry, escalate
-- ✅ **Quality evaluation** — confidence-rated outputs
+**Part 1:** Rules for how agents should plan, delegate, and evaluate multi-step work.
+**Part 2:** [Dispatch Protocol](https://github.com/stringztechnologies/dispatch-protocol) CLI integration — discover infrastructure, plan ownership, deploy configs, compile runbooks.
 
 ## Install
 
@@ -19,13 +11,20 @@ DispatchNow turns chaotic multi-agent work into structured, efficient pipelines:
 openclaw skills add stringztechnologies/dispatchnow
 ```
 
-## Pairs With
+## What It Does
 
-**[Agent-Handoff](https://github.com/stringztechnologies/openclaw-skills/tree/main/skills/agent-handoff)** — DispatchNow builds it, Agent-Handoff runs it forever.
+- Teaches agents structured planning before delegation
+- Minimal-context prompting (each sub-agent gets only what it needs)
+- Error recovery with diagnose → reframe → retry → escalate
+- Quality evaluation with confidence ratings
+- Infrastructure discovery across systemd, n8n, and OpenClaw
+- One-owner-per-task conflict resolution
+- Compiled ORCHESTRATOR.md runbooks for zero-context autonomous agents
 
-See [ECOSYSTEM.md](ECOSYSTEM.md) for the full orchestration stack documentation.
-See [ROADMAP.md](ROADMAP.md) for the growth plan.
+## Requires
+
+- [dispatch-protocol](https://github.com/stringztechnologies/dispatch-protocol) for Part 2 CLI commands
 
 ## Author
 
-[@Gemvolta](https://t.me/Gemvolta) / [Stringz Technologies](https://github.com/stringztechnologies)
+[Stringz Technologies](https://github.com/stringztechnologies)
